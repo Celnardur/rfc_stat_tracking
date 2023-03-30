@@ -14,9 +14,16 @@ fn get_count_from_file(path: String) -> Result<i64, String> {
         .map_err(|e| e.to_string())
 }
 
+#[tauri::command]
+fn save_count_to_file(count: i64, path: String) -> Result<(), String> {
+    std::fs::write(path, count.to_string()).map_err(|e| e.to_string())?;
+    Ok(())
+}
+
 fn main() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![get_count_from_file])
+        .invoke_handler(tauri::generate_handler![save_count_to_file])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

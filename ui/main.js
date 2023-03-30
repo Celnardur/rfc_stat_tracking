@@ -1,12 +1,16 @@
 let root = document.getElementById("root");
 let query_params = new URLSearchParams(window.location.search);
 const invoke = window.__TAURI__.invoke;
+const save = window.__TAURI__.dialog.save;
 
 let count = 0;
 
 let counter = {
     view: function() {
-        return m("button", {onclick: function() { count++; }}, count + " Clicks!");
+        return [
+            m("div", m("button", {onclick: function() { count++; }}, count + " Clicks!")),
+            m("div", m("button", {onclick: function() { save_count(count) } }, "Save"))
+        ];
     }
 }
 
@@ -18,5 +22,16 @@ if (query_params.has("count_file")) {
             m.mount(root, counter);
         }) 
         .catch((error) => alert(error));
+} else {
+    count = 0;
+    m.mount(root, counter);
 }
 
+async function save_count(num) {
+    let filepath = await save();
+    invoke('save_count_to_file', {count: count, path: filepath})
+        .then(() => {
+            alert("Count Saved");
+        })
+        .catch((error) => alert(error));
+}
