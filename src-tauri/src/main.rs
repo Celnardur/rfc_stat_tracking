@@ -92,11 +92,7 @@ fn save_count_to_file(count: i64, path: String) -> Result<(), String> {
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![get_count_from_file])
-        .invoke_handler(tauri::generate_handler![save_count_to_file])
-        .invoke_handler(tauri::generate_handler![open_game])
-        .invoke_handler(tauri::generate_handler![save_game])
-        .invoke_handler(tauri::generate_handler![print_play])
+        .invoke_handler(tauri::generate_handler![get_count_from_file, save_count_to_file, open_game, save_game, print_play])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
