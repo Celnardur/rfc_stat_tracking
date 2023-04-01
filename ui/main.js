@@ -6,6 +6,7 @@ const save = window.__TAURI__.dialog.save;
 // state
 let score = [0, 0];
 let field_pos = 0;
+let posession = 0;
 let plays = [];
 let save_path = null;
 
@@ -23,6 +24,15 @@ let counter = {
             m("div", [
                 m("label", {for: "field_pos"}, "Field Position"),
                 m("input", {type: "number", id: "field_pos", value: field_pos, min: "-9", max: "9"}),
+            ]),
+
+            m("div", [
+                m("label", {for: "possession"}, "Possession Type"),
+                m("select", { id: "possession"}, [
+                    m("option", {value: "Negitive"}, "Negitive"),
+                    m("option", {value: "Positive"}, "Positive"),
+
+                ]),
             ]),
             m("br"),
 
@@ -76,6 +86,8 @@ function add_play() {
     let negitive_score = Number(document.getElementById("negitive_score").value);
     let positive_score = Number(document.getElementById("positive_score").value);
     let old_field_pos = Number(document.getElementById("field_pos").value);
+    posession = document.getElementById("possession").value;
+
     let clock_min = Number(document.getElementById("clock_min").value);
     let clock_sec = Number(document.getElementById("clock_sec").value);
     let down = Number(document.getElementById("down").value);
@@ -87,6 +99,7 @@ function add_play() {
 
     let play = {
         clock: clock_min*60 + clock_sec,
+        posession: posession,
         field_pos: [old_field_pos, new_field_pos],
         points_from_play: [points_negitive, points_positive],
         score_after: [negitive_score + points_negitive, positive_score + points_positive],
@@ -109,6 +122,7 @@ if (query_params.has("game_file")) {
             let last_play = plays[plays.length - 1];
             field_pos = last_play.field_pos[1];
             score = last_play.score_after;
+            possession = last_play.possession;
             save_path = file;
 
             m.mount(root, counter);
@@ -117,6 +131,7 @@ if (query_params.has("game_file")) {
 } else {
     plays = [];
     field_pos = 0;
+    possession = 0;
     score = [0, 0];
     save_path = null;
 
