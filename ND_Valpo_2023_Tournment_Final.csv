@@ -1,0 +1,80 @@
+1200,Negitive,-3,3,0,0,0,0,1,Kickoff,"ND: Negative, Valpo: Positive"
+1180,Positive,3,-1,0,4,1,8,1,Pass,Long Retained Pass
+1140,Positive,-1,-1,0,0,1,4,1,Pass,Incomplete
+1100,Positive,-1,-2,0,0,1,4,2,Run,
+1070,Positive,-2,-1,0,0,1,4,3,Run,Fumble on the Handoff
+1030,Positive,-1,-9,0,6,1,10,4,Run,Touchdown
+1020,Positive,-7,-7,0,3,1,13,1,ExtraPoint,Extra Point Off Tee
+1020,Positive,3,-9,0,6,1,19,1,Kickoff,Ball recovered in Endzone by Valpo
+1016,Positive,-7,-7,0,2,1,21,1,ExtraPoint,Good Extra Point Off Tee
+1016,Positive,3,-3,0,0,1,21,1,Kickoff,Touchback
+1013,Negitive,-3,9,6,0,7,21,1,Run,Touchdown
+1006,Negitive,7,7,0,0,7,21,1,ExtraPoint,No Good
+1006,Negitive,-3,8,0,0,7,21,1,Kickoff,
+1000,Positive,8,7,0,0,7,21,1,Run,
+990,Positive,7,5,0,0,7,21,2,Run,
+960,Positive,5,4,0,0,7,21,3,Run,
+960,Positive,4,-5,0,0,7,21,4,Punt,
+960,Negitive,-5,-1,0,0,7,21,1,Run,First Down
+810,Negitive,-1,-1,3,0,10,21,1,Pass,Retained Short Pass
+780,Negitive,-1,-1,0,0,10,21,1,Run,Fumble on Handoff
+760,Negitive,-1,-2,0,0,10,21,2,Run,Fumble on handoff
+705,Negitive,-2,2,0,0,10,21,3,Run,QB Sneak
+650,Negitive,2,2,0,0,10,21,4,Run,Turnover On Down
+634,Positive,2,3,0,0,10,21,1,Pass,Sack
+600,Positive,3,4,0,0,10,21,2,Run,Fumble on Handoff
+570,Positive,4,4,0,0,10,21,3,Run,Fumble on Handoff
+530,Positive,4,-3,0,0,10,21,4,Punt,Punt Recovered By Neg
+517,Negitive,-3,-1,0,0,10,21,1,Run,First Down
+480,Negitive,-1,1,0,0,10,21,1,Run,
+440,Negitive,1,1,0,0,10,21,2,Pass,Incomplete Pass
+400,Negitive,1,2,0,0,10,21,3,Run,
+360,Negitive,2,9,6,0,16,21,4,Run,Touchdown
+346,Negitive,7,7,1,0,17,21,1,ExtraPoint,
+346,Negitive,-3,3,0,0,17,21,1,Kickoff,Touchback
+344,Positive,3,4,0,0,17,21,1,Pass,Sack
+320,Positive,4,5,0,0,17,21,2,Run,Fumble on Handoff
+287,Positive,5,3,0,0,17,21,3,Run,
+250,Positive,3,-9,0,6,17,27,4,Run,Touchdown
+240,Positive,-7,-7,0,2,17,29,1,ExtraPoint,Extra Point Off Tee
+240,Positive,3,-5,0,0,17,29,1,Kickoff,Recovered by Positive
+235,Positive,-5,-4,0,0,17,29,1,Run,Sack
+210,Positive,-4,-4,0,0,17,29,2,Pass,Incomplete Pass
+162,Positive,-4,-3,0,0,17,29,3,Run,Sack
+132,Positive,-3,-3,0,0,17,29,4,FieldGoal,"No Good, Turnover"
+132,Positive,-3,-3,0,0,17,29,1,Run,Fumble
+38,Negitive,-3,5,0,0,17,29,4,Punt,
+38,Positive,5,0,0,0,17,29,1,Run,
+15,Positive,0,-2,0,0,17,29,1,Run,
+1200,Positive,3,-8,0,0,17,29,1,Kickoff,ND Kickoff Recovered By Valpo
+1193,Positive,-8,-9,0,6,17,35,1,Run,Touchdown
+1188,Positive,-7,-7,0,2,17,37,1,ExtraPoint,Extra Point off Team
+1188,Positive,3,-6,0,0,17,37,1,Kickoff,
+1182,Negitive,-6,9,6,0,23,37,1,Run,Touchdown
+1174,Negitive,7,7,1,0,24,37,1,ExtraPoint,Good Extra Point
+1174,Negitive,-3,1,0,0,24,37,1,Kickoff,
+1172,Positive,1,-9,0,0,24,37,1,Run,Touchdown
+1163,Positive,-7,-7,0,2,24,47,1,ExtraPoint,Extra Point off Tee
+1163,Positive,3,-3,0,0,24,45,1,Kickoff,Touchback
+1159,Negitive,-3,2,0,0,24,45,1,Run,
+1120,Negitive,2,2,0,0,24,45,2,Run,
+1070,Negitive,2,1,0,0,24,45,3,Run,
+1040,Negitive,1,1,0,0,24,45,4,Run,Turnover On Downs
+1020,Positive,1,-8,0,0,24,45,1,Run,
+990,Positive,-8,-7,0,0,24,45,1,Run,Fumble on Handoff
+930,Positive,-7,-9,0,6,24,51,2,Run,Touchdown
+918,Positive,-7,-7,0,2,24,53,1,ExtraPoint,Extra Point on Tee
+918,Positive,3,-3,0,0,24,53,1,Kickoff,Kickoff Recovered Positive
+912,Positive,-3,-3,0,0,24,53,1,Pass,Incomplete Pass
+870,Positive,-3,-3,0,0,24,53,2,Run,
+830,Positive,-3,-9,0,6,24,59,3,Run,Touchdown
+770,Positive,-7,-7,0,2,24,61,3,ExtraPoint,Good off Tee
+700,Positive,3,-2,0,0,24,61,1,Kickoff,Negative Recovers
+670,Negitive,-2,-2,0,0,24,61,1,Run,Fumble on Handoff
+627,Negitive,-2,-1,0,0,24,61,2,Run,QB Sneak
+520,Negitive,-1,3,0,0,24,61,4,Punt,Touchback
+475,Positive,3,3,0,0,24,61,1,Pass,Incomplete Pass
+442,Positive,3,-9,0,6,24,67,2,Run,Touchdown
+330,Negitive,-7,-7,0,0,24,67,1,ExtraPoint,Miss
+330,Positive,3,-4,0,0,24,67,1,Kickoff,
+300,Negitive,-4,-4,0,0,24,67,1,Run,
