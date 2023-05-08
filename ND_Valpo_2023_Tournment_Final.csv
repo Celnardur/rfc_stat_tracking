@@ -1,5 +1,5 @@
-1200,Negitive,-3,3,0,0,0,0,1,Kickoff,"ND: Negative, Valpo: Positive"
-1180,Positive,3,-1,0,4,1,8,1,Pass,Long Retained Pass
+1200,Negitive,-3,3,1,0,0,0,1,Kickoff,"ND: Negative, Valpo: Positive"
+1180,Positive,3,-1,0,4,1,4,1,Pass,Long Retained Pass
 1140,Positive,-1,-1,0,0,1,4,1,Pass,Incomplete
 1100,Positive,-1,-2,0,0,1,4,2,Run,
 1070,Positive,-2,-1,0,0,1,4,3,Run,Fumble on the Handoff
@@ -75,6 +75,15 @@
 520,Negitive,-1,3,0,0,24,61,4,Punt,Touchback
 475,Positive,3,3,0,0,24,61,1,Pass,Incomplete Pass
 442,Positive,3,-9,0,6,24,67,2,Run,Touchdown
-330,Negitive,-7,-7,0,0,24,67,1,ExtraPoint,Miss
+330,Positive,-7,-7,0,0,24,67,1,ExtraPoint,Miss
 330,Positive,3,-4,0,0,24,67,1,Kickoff,
 300,Negitive,-4,-4,0,0,24,67,1,Run,
+270,Negitive,-4,-4,0,0,24,67,2,Run,
+240,Negitive,-4,0,0,0,24,67,3,Run,
+150,Negitive,0,0,0,0,24,67,1,Run,
+120,Negitive,0,2,0,0,24,67,2,Run,
+90,Negitive,2,-1,0,0,24,67,3,Run,"Touchdown, Bad Tackle Sensor Penalty "
+60,Negitive,-1,2,0,0,24,67,4,Run,Turnover
+45,Positive,2,-4,0,0,24,67,1,Run,First Down
+25,Positive,-4,-9,0,6,24,73,1,Run,Touchdown
+3,Positive,-7,-7,0,2,24,75,1,ExtraPoint,Good off Tee
