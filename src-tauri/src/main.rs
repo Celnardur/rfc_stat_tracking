@@ -22,6 +22,8 @@ enum PlayType {
     StartGame,
 }
 
+// Negitive - moving right
+// Positive - moving left
 #[derive(Debug, Serialize, Deserialize)]
 enum Possession {
     Negitive,
@@ -33,8 +35,8 @@ struct Play {
     clock:  u32,
     posession: Possession,
     field_pos: (i8, i8), // (before, after)
-    points_from_play: (u16, u16), // (moving right, moving left)
-    score_after: (u16, u16), // (moving right, moving left)
+    points_from_play: (u16, u16), // (Negitive, Positive)
+    score_after: (u16, u16), // (Negitive, Positive)
     down: u8,
     play_type: PlayType,
     notes: String,
